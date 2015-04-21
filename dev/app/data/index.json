@@ -1,0 +1,44 @@
+{
+	"head":{
+		"title":"",
+		"description":"",
+		"keywords":"",
+		"styles":[
+			"",
+			"",
+			""
+		],
+		"scripts":[
+			"",
+			""
+		],
+		"social":{
+			"facebook":{
+				"title":"",
+				"description":"",
+				"image":""
+			},
+			"twitter":{
+				"title":"",
+				"description":"",
+				"image":""
+			},
+			"google":{
+				"title":"",
+				"description":"",
+				"image":""
+			}
+		}
+	},
+
+	"foot":{
+		"scripts":[
+			"",
+			""
+		]
+	},
+
+	"content":{
+		"":""
+	}
+}

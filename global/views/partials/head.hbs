@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link rel="icon" href="/us/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/us/favicon.ico" type="image/x-icon">
+
+	<title>{{{ title }}}</title>
+
+	<meta name="description" content="{{{ description  }}}" />
+	<meta name="keywords" content="{{{ keywords }}}" />
+
+	{{#each styles }}<link rel="stylesheet" type="text/css" href="{{ this }}">
+	{{/each}}
+
+	{{#each scripts }}<script src="{{ this }}"></script>
+	{{/each}}
+
+</head>
+
+<body>
