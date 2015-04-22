@@ -52,8 +52,7 @@ module.exports = function(grunt) {
 					javascriptDir: '<%= pkg.directory.dest %>/assets/js',
 					fontsDir: '<%= pkg.directory.dest %>/assets/fonts',
 					relativeAssets: false,
-					outputStyle: 'expanded',
-					importPath: '<%= pkg.paths.global.scss %>' // Compass will also look at the global scss file directory
+					outputStyle: 'expanded'
 				}
 			}
 		},
@@ -65,11 +64,11 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					assets: '<%= pkg.directory.dest %>',
-					partials: ['<%= pkg.paths.global.partials %>','<%= pkg.paths.page.partials %>'],
-					layout: ['<%= pkg.paths.page.layout %>'],
-					data: ['<%= pkg.paths.page.data %>'],
+					partials: ['<%= pkg.paths.partials %>'],
+					layout: ['<%= pkg.paths.layout %>'],
+					data: ['<%= pkg.paths.data %>'],
 					production: true,
-					pages: ['<%= pkg.paths.page.pages %>']
+					pages: ['<%= pkg.paths.pages %>']
 				},
 				files: [{
 					expand: true,
@@ -85,7 +84,7 @@ module.exports = function(grunt) {
         browserify: {
             app: {
                 files: {
-                    '<%= pkg.directory.dest %>/assets/js/main.min.js': ['<%= pkg.paths.page.js %>/main.js']
+                    '<%= pkg.directory.dest %>/assets/js/main.min.js': ['<%= pkg.paths.js %>/main.js']
                 },
                 options: {
                     alias: require('./browserify.config.js'),
@@ -99,28 +98,28 @@ module.exports = function(grunt) {
 		// https://github.com/gruntjs/grunt-contrib-watch
 		watch: {
 			js: {
-				files: ['<%= pkg.paths.global.js %>','<%= pkg.paths.page.js %>'],
+				files: ['<%= pkg.paths.js %>'],
 				tasks: ['copy:dist'],
 				options: {
 					livereload: true
 				}
 			},
 			html: {
-				files: ['<%= pkg.paths.global.partials %>','<%= pkg.paths.page.partials %>','<%= pkg.paths.page.pages %>'],
+				files: ['<%= pkg.paths.partials %>','<%= pkg.paths.pages %>'],
 				tasks: ['assemble:dist'],
 				options: {
 					livereload: true
 				}
 			},
 			styles: {
-				files: ['<%= pkg.paths.global.scss %>/**/*.scss','<%= pkg.paths.page.scss %>/**/*.scss'],
+				files: ['<%= pkg.paths.scss %>/**/*.scss'],
 				tasks: ['compass'],
 				options: {
 					livereload: true
 				}
 			},
 			json: {
-				files: ['<%= pkg.paths.page.data %>','<%= pkg.paths.page.ajax %>'],
+				files: ['<%= pkg.paths.data %>','<%= pkg.paths.ajax %>'],
 				tasks: ['copy:dist','assemble:dist'],
 				options: {
 					livereload: true

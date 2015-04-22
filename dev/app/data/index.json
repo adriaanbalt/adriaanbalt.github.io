@@ -1,31 +1,28 @@
 {
 	"head":{
-		"title":"",
-		"description":"",
-		"keywords":"",
+		"title":"Adriaan BALT Scholvinck",
+		"description":"Adriaan BALT Scholvinck",
+		"keywords":"Adriaan BALT Scholvinck",
 		"styles":[
-			"",
-			"",
 			""
 		],
 		"scripts":[
-			"",
 			""
 		],
 		"social":{
 			"facebook":{
-				"title":"",
-				"description":"",
+				"title":"Adriaan BALT Scholvinck",
+				"description":"Adriaan BALT Scholvinck",
 				"image":""
 			},
 			"twitter":{
-				"title":"",
-				"description":"",
+				"title":"Adriaan BALT Scholvinck",
+				"description":"Adriaan BALT Scholvinck",
 				"image":""
 			},
 			"google":{
-				"title":"",
-				"description":"",
+				"title":"Adriaan BALT Scholvinck",
+				"description":"Adriaan BALT Scholvinck",
 				"image":""
 			}
 		}
@@ -33,7 +30,6 @@
 
 	"foot":{
 		"scripts":[
-			"",
 			""
 		]
 	},

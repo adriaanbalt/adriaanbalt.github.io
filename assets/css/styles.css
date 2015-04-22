@@ -1,0 +1,24 @@
+/* line 1, ../../dev/app/scss/_base.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* line 10, ../../dev/app/scss/_base.scss */
+* {
+  position: absolute;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  text-rendering: optimizeLegibility;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}

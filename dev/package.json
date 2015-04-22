@@ -4,20 +4,19 @@
 		"dest": "../"
 	},
 	"paths": {
-		"global":{
-			"partials":"../global/views/partials/**/*.hbs",
-			"js":"../global/js/**/*.js",
-			"scss":"../global/scss"
-		},
-		"page":{
-			"layout":"../global/views/layouts/default.hbs",
-			"partials": "app/views/partials/**/*.hbs",
-			"pages": "app/views/pages/**/*.hbs",
-			"js": "app/assets/js/**/*.js",
-			"scss": "app/scss",
-			"data": "app/data/**/*.json",
-			"ajax": "app/assets/ajax/**/*.json"
-		}
+		"layout":"app/views/layouts/default.hbs",
+		
+		"pages": "app/views/pages/**/*.hbs",
+		
+		"partials": "app/views/partials/**/*.hbs",
+
+		"js": "app/assets/js/**/*.js",
+		
+		"scss": "app/scss",
+		
+		"data": "app/data/**/*.json",
+		
+		"ajax": "app/assets/ajax/**/*.json"
 	},
 
 	"name": "BALT",
